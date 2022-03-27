@@ -17,8 +17,8 @@ from django.contrib import admin
 from django.urls import path,include
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('auth/', include('djoser.urls')),
+    path('admin/', 'https://nik121.herokuapp.com/'),
+    path('auth/', 'https://nik121.herokuapp.com/')),
     path('auth/', include('djoser.urls.jwt')),
     path("api/accounts/",include("accounts.urls")),
     path("api/events/",include("events.urls")),
